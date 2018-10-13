@@ -1,0 +1,36 @@
+\documentclass[]{ReportFormat}
+
+% Report details
+\newcommand{\CourseNo}{Tex101}
+\newcommand{\CourseTitle}{Texnical reports for Academic Assignments}
+\newcommand{\TypeDoc}{Assignment}
+\newcommand{\TypeDocNo}{1}
+\author{Krishna Toshniwal}
+\date{\today}
+
+
+\begin{document}
+\thispagestyle{empty}
+\maketitle
+
+% Change to Section number 0
+\setcounter{section}{-1}
+% Switch to alphabets. Comment out to switch to use numbers
+\renewcommand\thesubsection{\thesection.\alph{subsection}}
+\section{The story continues}
+
+\subsection{Word}
+\figone{Figures/tsne}{0.7}{YOLO}
+\begin{align*}
+(I_{t+1}(x)-I_t(x))B_i(x)&= \sum_{k=1}^K w_k B_k(x)  B_i(x)\\
+&=w_i B_i(x)B_i(x)
+\end{align*}
+
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\section{Alpha Beta Gamma}
+\subsection{Plots}
+\figtwo{Figures/q1}{Training Image plot}{Figures/q2}{Test Image plot}
+
+
+
+\end{document}
