@@ -1,6 +1,6 @@
 # LaTeX template - Academic assignment Report
 The template works like a charm. I'll be adding more commands and simplify the usage in upcoming months.
-Sample pdf file is located in the [build](./build). 
+Sample pdf file is located in the [build](./build) directory. 
 
 ### Some useful tips
 * **Cleaning out auxiliary files during compilation: (Tested on Linux)**
