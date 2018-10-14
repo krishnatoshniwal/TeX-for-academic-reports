@@ -11,6 +11,7 @@
 \usepackage{amsmath}
 \usepackage{caption}
 \captionsetup{justification=centering}
+\linespread{1.3}
 
 % Set page size 
 \usepackage{geometry}
@@ -34,15 +35,28 @@
 \newcommand{\smallhspace}{\hspace{0.1cm}}
 %% Headers and footers
 
-\pagestyle{fancy}
-\lhead{\textbf{\CourseNo}}
-\chead{}
-\rhead{\textbf{\TypeDoc\smallhspace\TypeDocNo}}
-\lfoot{}
-\cfoot{Page \thepage\ /\  \pageref{LastPage}}
-\rfoot{}
-\renewcommand{\headrulewidth}{1pt}
-\renewcommand{\footrulewidth}{1pt}
+\fancypagestyle{initial}{
+	\lhead{}
+	\chead{}
+	\rhead{}
+	\lfoot{}
+	\cfoot{Page \thepage\ /\  \pageref{LastPage}}
+	\rfoot{}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{1pt}
+}
+
+\fancypagestyle{other}{
+	\lhead{\textbf{\CourseNo}}
+	\chead{}
+	\rhead{\textbf{\TypeDoc\smallhspace\TypeDocNo}}
+	\lfoot{}
+	\cfoot{Page \thepage\ /\  \pageref{LastPage}}
+	\rfoot{}
+	\renewcommand{\headrulewidth}{1pt}
+	\renewcommand{\footrulewidth}{1pt}
+}
+
 
 \title{\CourseNo\smallhspace-\smallhspace\CourseTitle \\\vspace{0.1cm} \TypeDoc\smallhspace\TypeDocNo}
 
